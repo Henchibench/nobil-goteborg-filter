@@ -533,7 +533,7 @@
             (address ? esc(address) + '<br>' : '') +
             (cityLine ? esc(cityLine) : '') +
           '</div>' +
-          (lat && lon ? '<a class="btn-streetview" href="https://www.google.com/maps?q=&amp;layer=c&amp;cbll=' + encodeURIComponent(lat) + ',' + encodeURIComponent(lon) + '" target="_blank" rel="noopener">\u25CE Street View</a>' : '') +
+          (lat && lon ? '<a class="btn-streetview" href="https://www.google.com/maps/@' + encodeURIComponent(lat) + ',' + encodeURIComponent(lon) + ',3a,75y,90t,0r" target="_blank" rel="noopener">\u25CE Street View</a>' : '') +
           '<div class="detail-grid">' +
             '<div class="detail-field">' +
               '<div class="detail-field-label">Operat\u00f6r</div>' +
