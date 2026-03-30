@@ -90,9 +90,11 @@ def get_connector_trans_values(station, attr_type_id):
     for _, attrs in conn.items():
         if not isinstance(attrs, dict):
             continue
-        attr = attrs.get(str(attr_type_id))
-        if isinstance(attr, dict) and attr.get('trans'):
-            values.append(attr['trans'])
+        for _, attr in attrs.items():
+            if not isinstance(attr, dict):
+                continue
+            if str(attr.get('attrtypeid')) == str(attr_type_id) and attr.get('trans'):
+                values.append(attr['trans'])
     return sorted(set(values))
 
 
