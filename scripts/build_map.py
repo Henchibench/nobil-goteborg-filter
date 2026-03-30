@@ -143,7 +143,35 @@ def classify_station(station):
         score += 1
         reasons.append('Real-time information=Yes')
     if payment_values:
-        reasons.append('Payment=' + ', '.join(payment_values))
+        score += 1
+        reasons.append('Betalmetod finns: ' + ', '.join(payment_values))
+    else:
+        reasons.append('Ingen betalmetod registrerad')
+
+    # OCPI mapping — only public/commercial networks register
+    ocpi_id = csmd.get('ocpidb_mapping_stasjon_id')
+    if ocpi_id:
+        score += 2
+        reasons.append('OCPI-registrerad')
+    else:
+        reasons.append('OCPI saknas')
+
+    # Public funding
+    public_funding = get_station_attr_trans(station, 22)
+    if public_funding == 'Public':
+        score += 2
+        reasons.append('Offentlig finansiering')
+    elif public_funding:
+        reasons.append(f'PublicFunding={public_funding}')
+
+    # Number of charging points
+    num_points = csmd.get('Number_charging_points') or 0
+    if isinstance(num_points, (int, float)) and num_points >= 6:
+        score += 1
+        reasons.append(f'>= 6 laddpunkter ({int(num_points)})')
+    elif isinstance(num_points, (int, float)) and num_points == 1:
+        score -= 1
+        reasons.append('Enstaka laddpunkt')
 
     for hint in PRIVATE_HINTS:
         if hint in text:
