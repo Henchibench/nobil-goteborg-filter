@@ -213,6 +213,12 @@ def build_feature(station):
         'station_status': csmd.get('Station_status'),
         'international_id': csmd.get('International_id'),
     }
+    props['connector_types'] = get_connector_trans_values(station, 4)
+    props['charging_capacity'] = get_connector_trans_values(station, 5)
+    props['energy_carrier'] = get_connector_trans_values(station, 26)
+    props['parking_fee'] = get_station_attr_trans(station, 7)
+    props['time_limit'] = get_station_attr_trans(station, 6)
+    props['open24'] = get_station_attr_trans(station, 24)
     props.update(classified)
 
     return {
