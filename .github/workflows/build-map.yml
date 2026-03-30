@@ -1,0 +1,47 @@
+name: Build Nobil map
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build GeoJSON and map data
+        env:
+          NOBIL_API_KEY: ${{ secrets.NOBIL_API_KEY }}
+        run: |
+          python3 scripts/build_map.py
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - name: Upload build outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: nobil-map-output
+          path: |
+            output/chargers.geojson
+            output/summary.json
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
