@@ -1,0 +1,214 @@
+{
+  "request_url": "https://nobil.no/api/server/search.php",
+  "request_params": {
+    "apikey": "***",
+    "apiversion": "3",
+    "action": "search",
+    "type": "rectangle",
+    "northeast": "(57.7640, 12.0970)",
+    "southwest": "(57.6400, 11.8200)",
+    "limit": "5",
+    "format": "json"
+  },
+  "body_preview": "{\"Provider\":\"NOBIL.no\",\"Rights\":\"Creative Commons Attribution 4.0 International License\",\"apiver\":\"3\", \"chargerstations\": [{\"csmd\": {\"id\":32611,\"name\":\"G\\u00f6teborgs Hamn Port 6\",\"ocpidb_mapping_stasjon_id\":null,\"Street\":\"Nordatlanten\",\"House_number\":\"6\",\"Zipcode\":\"41834\",\"City\":\"G\\u00f6teborg\",\"Municipality_ID\":\"1480\",\"Municipality\":\"G\\u00f6teborg\",\"County_ID\":\"14\",\"County\":\"V\\u00c4STRA G\\u00d6TALAND\",\"Description_of_location\":\"57.695205, 11.829415\",\"Owned_by\":\"Nilsson Energy AB\",\"Operator\":\"Hydri AB\",\"Number_charging_points\":2,\"Position\":\"(57.69495,11.84189)\",\"Image\":\"32611.jpg\",\"Available_charging_points\":2,\"User_comment\":\"V\\u00e4tgas, 350 Barq, 700 Barq.\",\"Contact_info\":\"+46700809181\",\"Created\":\"2024-08-22 22:13:32\",\"Updated\":\"2024-09-05 11:12:04\",\"Station_status\":1,\"Land_code\":\"SWE\",\"International_id\":\"SWE_32611\"}, \"attr\": {\"st\":{\"24\":{\"attrtypeid\":\"24\",\"attrname\":\"Open 24h\",\"attrvalid\":\"1\",\"trans\":\"Yes\",\"attrval\":\"1\"},\"21\":{\"attrtypeid\":\"21\",\"attrname\":\"Real-time information\",\"attrvalid\":\"2\",\"trans\":\"No\",\"attrval\":\"\"},\"22\":{\"attrtypeid\":\"22\",\"attrname\":\"Public funding\",\"attrvalid\":\"3\",\"trans\":\"Other\",\"attrval\":\"\"},\"7\":{\"attrtypeid\":\"7\",\"attrname\":\"Parking fee\",\"attrvalid\":\"2\",\"trans\":\"No\",\"attrval\":false},\"6\":{\"attrtypeid\":\"6\",\"attrname\":\"Time limit\",\"attrvalid\":\"2\",\"trans\":\"No\",\"attrval\":0},\"3\":{\"attrtypeid\":\"3\",\"attrname\":\"Location\",\"attrvalid\":\"5\",\"trans\":\"Transport hub\",\"attrval\":\"\"},\"2\":{\"attrtypeid\":\"2\",\"attrname\":\"Availability\",\"attrvalid\":\"1\",\"trans\":\"Public\",\"attrval\":\"\"}}, \"conn\":{\"1\":{\"1\":{\"attrtypeid\":\"1\",\"attrname\":\"Accessibility\",\"attrvalid\":\"1\",\"trans\":\"Open\",\"attrval\":\"\"},\"4\":{\"attrtypeid\":\"4\",\"attrname\":\"Connector\",\"attrvalid\":\"70\",\"trans\":\"Hydrogen\",\"attrval\":\"\"},\"5\":{\"attrtypeid\":\"5\",\"attrname\":\"Charging capacity\",\"attrvalid\":\"27\",\"trans\":\"700 bar\",\"attrval\":\"\"},\"17\":{\"attrtypeid\":\"17\",\"attrname\":\"Vehicle type\",\"attrvalid\":\"7\",\"trans\":\"All hydrogen vehicles\",\"attrval\":\"\"},\"18\":{\"attrtypeid\":\"18\",\"attrname\":\"Reservable\",\"attrvalid\":\"2\",\"trans\":\"No\",\"attrval\":\"\"},\"19\":{\"attrtypeid\":\"19\",\"attrname\":\"Payment method\",\"attrvalid\":\"2\",\"trans\":\"Bank card\",\"attrval\":\"\"},\"26\":{\"attrtypeid\":\"26\",\"attrname\":\"Energy carrier\",\"attrvalid\":\"2\",\"trans\":\"Hydrogen\",\"attrval\":\"\"}},\"2\":{\"1\":{\"attrtypeid\":\"1\",\"attrname\":\"Accessibility\",\"attrvalid\":\"1\",\"trans\":\"Open\",\"attrval\":\"\"},\"4\":{\"attrtypeid\":\"4\",\"attrname\":\"Connector\",\"attrvalid\":\"70\",\"trans\":\"Hydrogen\",\"attrval\":\"\"},\"5\":{\"attrtypeid\":\"5\",\"attrname\":\"Charging capacity\",\"attrvalid\":\"27\",\"trans\":\"700 bar\",\"attrval\":\"\"},\"17\":{\"attrtypeid\":\"17\",\"attrname\":\"Vehicle type\",\"attrvalid\":\"7\",\"trans\":\"All hydrogen vehicles\",\"attrval\":\"\"},\"18\":{\"attrtypeid\":\"18\",\"attrname\":\"Reservable\",\"attrvalid\":\"2\",\"trans\":\"No\",\"attrval\":\"\"},\"19\":{\"attrtypeid\":\"19\",\"attrname\":\"Payment method\",\"attrvalid\":\"2\",\"trans\":\"Bank card\",\"attrval\":\"\"},\"26\":{\"attrtypeid\":\"26\",\"attrname\":\"Energy carrier\",\"attrvalid\":\"2\",\"trans\":\"Hydrogen\",\"attrval\":\"\"}}}}}, {\"csmd\": {\"id\":76721,\"name\":\"Hundra\\u00e5rsgatan 23-29\",\"ocpidb_mapping_stasjon_id\":\"SE#PGC#bf20e36d-c001-45ca-b704-cedc7953fdcb\",\"Street\":\"Hundra\\u00e5rsgatan\",\"House_number\":\"23\",\"Zipcode\":\"41535\",\"City\":\"G\\u00f6teborg\",\"Municipality_ID\":\"1480\",\"Municipality\":\"G\\u00f6teborg\",\"County_ID\":\"14\",\"County\":\"V\\u00c4STRA G\\u00d6TALAND\",\"Description_of_location\":null,\"Owned_by\":\"G\\u00f6teborgs Stads Parkering\",\"Operator\":\"Parkering G\\u00f6teborg\",\"Number_charging_points\":12,\"Position\":\"(57.75156,12.03085)\",\"Image\":\"no.image.svg\",\"Available_charging_points\":12,\"User_comment\":null,\"Contact_info\":null,\"Created\":\"2026-02-05 14:00:24\",\"Updated\":\"2026-02-05 14:00:24\",\"Station_status\":1,\"Land_code\":\"SWE\",\"International_id\":\"SWE_076721\"}, \"attr\": {\"st\":{\"24\":{\"attrtypeid\":\"24\",\"attrname\":\"Open 24h\",\"attrvalid\":\"1\",\"trans\":\"Yes\",\"attrval\":\"1\"},\"21\":{\"attrtypeid\":\"21\",\"attrname\":\"Real-time information\",\"attrvalid\":\"2\",\"trans\":\"No\",\"attrval\":\"\"},\"22\":{\"attrtypeid\":\"22\",\"attrname\":\"Public funding\",\"attrvalid\":\"4\",\"trans\":\"None\",\"attrval\":\"\"},\"7\":{\"attrtypeid\":\"7\",\"attrn",
+  "parsed_json": true,
+  "json_type": "dict",
+  "json_top_level_keys": [
+    "Provider",
+    "Rights",
+    "apiver",
+    "chargerstations"
+  ],
+  "station_list_key": "chargerstations",
+  "station_count": 5,
+  "first_station_keys": [
+    "attr",
+    "csmd"
+  ],
+  "first_station_sample": {
+    "csmd": {
+      "id": 32611,
+      "name": "Göteborgs Hamn Port 6",
+      "ocpidb_mapping_stasjon_id": null,
+      "Street": "Nordatlanten",
+      "House_number": "6",
+      "Zipcode": "41834",
+      "City": "Göteborg",
+      "Municipality_ID": "1480",
+      "Municipality": "Göteborg",
+      "County_ID": "14",
+      "County": "VÄSTRA GÖTALAND",
+      "Description_of_location": "57.695205, 11.829415",
+      "Owned_by": "Nilsson Energy AB",
+      "Operator": "Hydri AB",
+      "Number_charging_points": 2,
+      "Position": "(57.69495,11.84189)",
+      "Image": "32611.jpg",
+      "Available_charging_points": 2,
+      "User_comment": "Vätgas, 350 Barq, 700 Barq.",
+      "Contact_info": "+46700809181",
+      "Created": "2024-08-22 22:13:32",
+      "Updated": "2024-09-05 11:12:04",
+      "Station_status": 1,
+      "Land_code": "SWE",
+      "International_id": "SWE_32611"
+    },
+    "attr": {
+      "st": {
+        "24": {
+          "attrtypeid": "24",
+          "attrname": "Open 24h",
+          "attrvalid": "1",
+          "trans": "Yes",
+          "attrval": "1"
+        },
+        "21": {
+          "attrtypeid": "21",
+          "attrname": "Real-time information",
+          "attrvalid": "2",
+          "trans": "No",
+          "attrval": ""
+        },
+        "22": {
+          "attrtypeid": "22",
+          "attrname": "Public funding",
+          "attrvalid": "3",
+          "trans": "Other",
+          "attrval": ""
+        },
+        "7": {
+          "attrtypeid": "7",
+          "attrname": "Parking fee",
+          "attrvalid": "2",
+          "trans": "No",
+          "attrval": false
+        },
+        "6": {
+          "attrtypeid": "6",
+          "attrname": "Time limit",
+          "attrvalid": "2",
+          "trans": "No",
+          "attrval": 0
+        },
+        "3": {
+          "attrtypeid": "3",
+          "attrname": "Location",
+          "attrvalid": "5",
+          "trans": "Transport hub",
+          "attrval": ""
+        },
+        "2": {
+          "attrtypeid": "2",
+          "attrname": "Availability",
+          "attrvalid": "1",
+          "trans": "Public",
+          "attrval": ""
+        }
+      },
+      "conn": {
+        "1": {
+          "1": {
+            "attrtypeid": "1",
+            "attrname": "Accessibility",
+            "attrvalid": "1",
+            "trans": "Open",
+            "attrval": ""
+          },
+          "4": {
+            "attrtypeid": "4",
+            "attrname": "Connector",
+            "attrvalid": "70",
+            "trans": "Hydrogen",
+            "attrval": ""
+          },
+          "5": {
+            "attrtypeid": "5",
+            "attrname": "Charging capacity",
+            "attrvalid": "27",
+            "trans": "700 bar",
+            "attrval": ""
+          },
+          "17": {
+            "attrtypeid": "17",
+            "attrname": "Vehicle type",
+            "attrvalid": "7",
+            "trans": "All hydrogen vehicles",
+            "attrval": ""
+          },
+          "18": {
+            "attrtypeid": "18",
+            "attrname": "Reservable",
+            "attrvalid": "2",
+            "trans": "No",
+            "attrval": ""
+          },
+          "19": {
+            "attrtypeid": "19",
+            "attrname": "Payment method",
+            "attrvalid": "2",
+            "trans": "Bank card",
+            "attrval": ""
+          },
+          "26": {
+            "attrtypeid": "26",
+            "attrname": "Energy carrier",
+            "attrvalid": "2",
+            "trans": "Hydrogen",
+            "attrval": ""
+          }
+        },
+        "2": {
+          "1": {
+            "attrtypeid": "1",
+            "attrname": "Accessibility",
+            "attrvalid": "1",
+            "trans": "Open",
+            "attrval": ""
+          },
+          "4": {
+            "attrtypeid": "4",
+            "attrname": "Connector",
+            "attrvalid": "70",
+            "trans": "Hydrogen",
+            "attrval": ""
+          },
+          "5": {
+            "attrtypeid": "5",
+            "attrname": "Charging capacity",
+            "attrvalid": "27",
+            "trans": "700 bar",
+            "attrval": ""
+          },
+          "17": {
+            "attrtypeid": "17",
+            "attrname": "Vehicle type",
+            "attrvalid": "7",
+            "trans": "All hydrogen vehicles",
+            "attrval": ""
+          },
+          "18": {
+            "attrtypeid": "18",
+            "attrname": "Reservable",
+            "attrvalid": "2",
+            "trans": "No",
+            "attrval": ""
+          },
+          "19": {
+            "attrtypeid": "19",
+            "attrname": "Payment method",
+            "attrvalid": "2",
+            "trans": "Bank card",
+            "attrval": ""
+          },
+          "26": {
+            "attrtypeid": "26",
+            "attrname": "Energy carrier",
+            "attrvalid": "2",
+            "trans": "Hydrogen",
+            "attrval": ""
+          }
+        }
+      }
+    }
+  }
+}
